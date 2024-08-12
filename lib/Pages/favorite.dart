@@ -5,12 +5,13 @@ class Favorite extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Your favorite food'),
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Your favorite food'),
+      ),
+      body: const Center(
+        //TODO: После нажатия на сердечко на странице SHOP сюда должны добавиться продукты
+        child: Text('Nothing'),
       ),
     );
   }

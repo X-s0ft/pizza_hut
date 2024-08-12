@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'theme.dart';
-import 'router/router.dart';
+import 'package:pizza_hut/routers/router.dart';
+import 'package:pizza_hut/theme/theme.dart';
+
 
 class PizzaShop extends StatelessWidget {
   const PizzaShop({super.key});
@@ -9,7 +10,7 @@ class PizzaShop extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Pizza shop',
-      theme: themeData,
+      theme: mainTheme,
       routes: routers,
     );
   }

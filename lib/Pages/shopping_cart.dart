@@ -5,12 +5,13 @@ class ShoppingCart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Cart'),
-        ),
-        backgroundColor: Colors.white,
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Cart'),
+      ),
+      body: const Center(
+        //TODO: Пользователь может добавлять продукты, на данной странице должна быть реализованна карта, а так же еда которую добавил пользователь 
+        child: Text('Nothing'),
       ),
     );
   }
