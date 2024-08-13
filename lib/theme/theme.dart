@@ -13,10 +13,10 @@ final mainTheme = ThemeData(
     style: ElevatedButton.styleFrom(
       overlayColor: secondaryColor,
       backgroundColor: Colors.white,
+      foregroundColor: secondaryColor,
       textStyle: const TextStyle(
-        color: Colors.red,
+        color: secondaryColor,
         fontSize: 15,
-        //TODO: понять почему не меняет цвет текст на кнопке
       ),
       side: const BorderSide(
         color: secondaryColor,

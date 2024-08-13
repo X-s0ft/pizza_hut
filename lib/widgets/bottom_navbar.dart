@@ -23,7 +23,7 @@ class _PizzaNavigationState extends State<PizzaNavigation> {
             BoxShadow(
               color: Colors.black,
               blurRadius: 3,
-              // offset: Offset(0, 0.72),
+              offset: Offset(0, 0.72),
             ),
           ],
         ),

@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:developer' as dev;
 
+import 'package:flutter/widgets.dart';
+
 class Shop extends StatelessWidget {
   const Shop({super.key});
 
@@ -45,6 +47,7 @@ class Shop extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              //TODO: ПОдумать как реализовать выбор еды по его виду
               ElevatedButton(
                 onPressed: () {
                   dev.log('Pizza');
@@ -55,7 +58,6 @@ class Shop extends StatelessWidget {
                 onPressed: () {
                   dev.log('Salads');
                 },
-                style: ElevatedButton.styleFrom(textStyle: const TextStyle(color: Colors.red)),
                 child: const Text('Salads'),
               ),
               ElevatedButton(
@@ -75,10 +77,162 @@ class Shop extends StatelessWidget {
           const SizedBox(
             height: 25,
           ),
-          const Row(),
+          Container(
+            margin: const EdgeInsets.symmetric(vertical: 20),
+            height: 200,
+            child: ListView(
+              //TODO: Задизайнить блоки с едой (общая)
+              scrollDirection: Axis.horizontal,
+              children: [
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: const [BoxShadow(blurRadius: 2)],
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          Icon(Icons.abc),
+                          Text('data'),
+                          Text('datas'),
+                          Row(
+                            children: [
+                              Text('price'),
+                              IconButton(
+                                onPressed: () {
+                                  dev.log('message');
+                                },
+                                icon: Icon(Icons.remove),
+                              ),
+                              Text('Count'),
+                              IconButton(
+                                onPressed: () {
+                                  dev.log('message');
+                                },
+                                icon: Icon(Icons.add),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [BoxShadow(blurRadius: 2)],
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          Icon(Icons.abc),
+                          Text('data'),
+                          Text('datas'),
+                          Row(
+                            children: [
+                              Text('price'),
+                              IconButton(
+                                onPressed: () {
+                                  dev.log('message');
+                                },
+                                icon: Icon(Icons.remove),
+                              ),
+                              Text('Count'),
+                              IconButton(
+                                onPressed: () {
+                                  dev.log('message');
+                                },
+                                icon: Icon(Icons.add),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [BoxShadow(blurRadius: 2)],
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          Icon(Icons.abc),
+                          Text('data'),
+                          Text('datas'),
+                          Row(
+                            children: [
+                              Text('price'),
+                              IconButton(
+                                onPressed: () {
+                                  dev.log('message');
+                                },
+                                icon: Icon(Icons.remove),
+                              ),
+                              Text('Count'),
+                              IconButton(
+                                onPressed: () {
+                                  dev.log('message');
+                                },
+                                icon: Icon(Icons.add),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [BoxShadow(blurRadius: 2)],
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          Icon(Icons.abc),
+                          Text('data'),
+                          Text('datas'),
+                          Row(
+                            children: [
+                              Text('price'),
+                              IconButton(
+                                onPressed: () {
+                                  dev.log('message');
+                                },
+                                icon: Icon(Icons.remove),
+                              ),
+                              Text('Count'),
+                              IconButton(
+                                onPressed: () {
+                                  dev.log('message');
+                                },
+                                icon: Icon(Icons.add),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          )
         ],
       ),
-      // ),
     );
   }
 }
