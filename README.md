@@ -6,7 +6,7 @@ My pet project
 
 - Shop.dart:
   
-  a) Add bloc for order food
+  a) Add bloc for order food ( comlete, work on design )
   
   b) logic for 'chouse' what food need to display (like salads, sooups and st)
   
@@ -33,10 +33,12 @@ My pet project
    c) Animation if the food is highlighted on the screen, then you need to enlarge it and display the order button and reduce all other objects and remove the order button
    
 // Need to fix
-
-- The Theme.dart does not allow you to use the color of the text in the buttons
  
 // Bad issue
+
+- There is no DataBase in the project (like Firebase)
+
+- There is no API in the project
 
 - Only Android app without Desctop, web or IOS
 
