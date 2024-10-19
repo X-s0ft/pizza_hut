@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 const primaryColor = Color.fromARGB(255, 255, 255, 255);
 const secondaryColor = Color.fromARGB(255, 229, 46, 46);
 
+const primaryText = TextStyle();
+const secondaryText = TextStyle();
+
 final mainTheme = ThemeData(
   appBarTheme: const AppBarTheme(
-    elevation: 0,
     backgroundColor: primaryColor,
+    
   ),
   scaffoldBackgroundColor: primaryColor,
   elevatedButtonTheme: ElevatedButtonThemeData(
